@@ -14,11 +14,15 @@ const ProductSchema = mongoose.Schema(
         image: {
             type: String,
             required: false,
-            default: ""
+            default: "https://dl.dropboxusercontent.com/"
         },
         category: {
             type: String,
             required: true
+        },
+        description:{
+            type: String,
+            required: false
         }
     },
     {
