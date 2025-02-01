@@ -4,6 +4,7 @@ import Home from "./windows/Home";
 import About from "./windows/About";
 import Login from "./windows/Login";
 import HomeAdmin from "./windows/HomeAdmin";
+import ProtectedAdminRoute from "./ProtectedRoute";
 function App() {
   return (
     <Router>
@@ -11,8 +12,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/home-admin" element={<HomeAdmin />} />
-
+        <Route element={<ProtectedAdminRoute/>}>
+          <Route path="/home-admin" element={<HomeAdmin />} />
+        </Route>
       </Routes>
     </Router>
   );
