@@ -1,83 +1,90 @@
-header{
-    width: 100dvw;
-    display: flex;
-    align-items: center;
-    height: 10dvh;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-header h1{
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 2%;
-    font-size: 2.5em;
+header {
+  background-color: #b22222; 
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
 
-header .navbar{
-    height:80%;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 2%;
+header h1 {
+  margin: 0;
+  margin-bottom: 1%;
+  font-size: 3rem;
 }
 
-.navbar .navbarButton{
-    height: 100%;   
-    display: flex;
-    align-items: center;
-    width: auto;
-    padding: 0px 1.5%;
-    margin-right: 1%;
-    margin-left: 1%;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-decoration: none;
+nav {
+  background-color: #8b0000; 
+  padding: 10px;
+  text-align: center;
 }
 
-.navbar .navbarButton:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border-radius: 20px;
 }
 
-.footer{
-    width: 100dvw;
-    height: 15dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+nav a:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1); 
 }
 
-.container-productos{
-    text-align: center;
+.title-products {
+  text-align: center;
+  color: #b22222;
+  margin: 20px 0;
+  margin-bottom: 10px;
 }
 
-.card{
-    border: 1px solid hsl(0, 0%, 40%);
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1);
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    max-width: 15dvw;
-    display: inline-block;
+.container-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
 }
 
-.card .card-image{
-    max-width: 60%;
-    height: auto;
-    margin-bottom: 10px;
+.card {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.title-products{
-    text-align: center;
-    border: 1px solid;
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  color: #8b0000;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .login-container {
-  min-height: 100vh;
+  position: fixed;
+  height: 100dvh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,9 +103,9 @@ header .navbar{
 
 .login-title {
   text-align: center;
-  color: #333;
-  margin-bottom: 30px;
-  font-size: 24px;
+  color: #b22222;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
 
 .login-form {
@@ -143,7 +150,7 @@ header .navbar{
 }
 
 .submit-button {
-  background-color: #007bff;
+  background-color: #8b0000;
   color: white;
   padding: 12px;
   border: none;
@@ -155,10 +162,10 @@ header .navbar{
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: #b22222;
 }
 
 .input-field:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: gray;
 }
