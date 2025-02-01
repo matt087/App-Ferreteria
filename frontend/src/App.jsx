@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./windows/Home";
 import About from "./windows/About";
 import Login from "./windows/Login";
+import HomeAdmin from "./windows/HomeAdmin";
 function App() {
   return (
     <Router>
@@ -10,6 +11,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/home-admin" element={<HomeAdmin />} />
+
       </Routes>
     </Router>
   );

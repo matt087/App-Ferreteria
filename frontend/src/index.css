@@ -32,6 +32,7 @@ nav a {
   display: inline-block;
   transition: transform 0.2s ease, background-color 0.2s ease;
   border-radius: 20px;
+  margin-right: 10px;
 }
 
 nav a:hover {
@@ -150,7 +151,7 @@ nav a:hover {
 }
 
 .submit-button {
-  background-color: #8b0000;
+  background-color: #b22222;
   color: white;
   padding: 12px;
   border: none;
@@ -168,4 +169,46 @@ nav a:hover {
 .input-field:focus {
   outline: none;
   border-color: gray;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64.5vh;
+  background-color: #f8f9fa;
+}
+
+.welcome-card {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-title {
+  color: #dc3545;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.welcome-text {
+  color: #6c757d;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
 }
