@@ -172,14 +172,6 @@ const verifyToken = async (req, res, next) => {
     }
 };
 
-const logout = async (req, res) => {
-    try {
-        res.status(200).json({ message: "Sesión cerrada exitosamente" });
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
-};
-
 module.exports = {
     getUsers,
     getUser,
@@ -188,6 +180,5 @@ module.exports = {
     deleteUser,
     generateToken,
     verifyToken, 
-    login,
-    logout
+    login
 }
